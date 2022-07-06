@@ -24,16 +24,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone No. " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x73-k0-FWF">
-                                <rect key="frame" x="58" y="265" width="276" height="34"/>
+                                <rect key="frame" x="58" y="321" width="276" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
+                                    <action selector="phonenumberchecking:" destination="BYZ-38-t0r" eventType="editingChanged" id="RWl-0V-40s"/>
                                     <segue destination="h5K-6K-Qob" kind="show" id="6LN-XQ-iP4"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRA-DB-ceZ">
-                                <rect key="frame" x="58" y="324" width="68" height="21"/>
+                                <rect key="frame" x="58" y="377" width="68" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
@@ -63,6 +64,13 @@
                                     <action selector="ButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1lZ-UF-Fuw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbD-Y5-mSe">
+                                <rect key="frame" x="58" y="280" width="276" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -75,7 +83,8 @@
                     <connections>
                         <outlet property="emailMessage" destination="nA4-7b-NQX" id="Xwp-QF-Qdl"/>
                         <outlet property="mailidTextField" destination="FIS-og-mvY" id="rJX-1B-MYU"/>
-                        <outlet property="phoneTextField" destination="x73-k0-FWF" id="6Va-N4-xQP"/>
+                        <outlet property="phoneMessage" destination="NbD-Y5-mSe" id="xY7-DW-bgI"/>
+                        <outlet property="phoneTextField" destination="x73-k0-FWF" id="exx-1T-TnL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

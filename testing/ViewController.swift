@@ -11,10 +11,12 @@ class ViewController: UIViewController {
 
 
     @IBOutlet weak var mailidTextField : UITextField!
-    @IBOutlet weak var phoneTextField :UITextField!
+  
+    @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var emailMessage :UILabel!
 
-
+    @IBOutlet weak var phoneMessage: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -43,6 +45,19 @@ class ViewController: UIViewController {
         self.navigationController!.pushViewController(vc, animated:true)
     }
     
+    
+    @IBAction func phonenumberchecking(_ sender: Any) {
+        let email = phoneTextField.text ?? ""
+        if email.isvalidphone()
+        {
+            phoneMessage.textColor = UIColor.green
+            phoneMessage.text = "Yah! it's a Valid Phone"
+        }
+        else{
+            phoneMessage.textColor = UIColor.red
+            phoneMessage.text = "Not a Valid Phone Number"
+        }    }
+    
 }
 
 
@@ -52,5 +67,10 @@ extension String {
         let predic = NSPredicate(format: "SELF MATCHES %@", inputrefex)
         return predic.evaluate(with: self)
     }
-}
+    
+    func isvalidphone() -> Bool {
+        let inputrefex = "^[+]?[(]?[0-9]{3}[)]?[-\\.]?[0-9]{3}[-\\.]?[0-9]{4,6}$"
+        let predic = NSPredicate(format: "SELF MATCHES %@", inputrefex)
+        return predic.evaluate(with: self)
+    }}
 
