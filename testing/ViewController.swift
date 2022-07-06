@@ -34,7 +34,15 @@ class ViewController: UIViewController {
             emailMessage.text = "Not a Valid Email"
         }
     }
-
+    
+    
+    
+    @IBAction func ButtonAction(_ sender: Any) {
+        let namestoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc  = namestoryboard.instantiateViewController(withIdentifier: "SecondPageControllerViewController") as! SecondPageControllerViewController
+        self.navigationController!.pushViewController(vc, animated:true)
+    }
+    
 }
 
 

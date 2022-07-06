@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CC405DB287610D9002C7BB2 /* SecondPageControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC405DA287610D9002C7BB2 /* SecondPageControllerViewController.swift */; };
 		3CF5A2552872F3BA007F1424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF5A2542872F3BA007F1424 /* AppDelegate.swift */; };
 		3CF5A2572872F3BA007F1424 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF5A2562872F3BA007F1424 /* SceneDelegate.swift */; };
 		3CF5A2592872F3BA007F1424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF5A2582872F3BA007F1424 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3CC405DA287610D9002C7BB2 /* SecondPageControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageControllerViewController.swift; sourceTree = "<group>"; };
 		3CF5A2512872F3BA007F1424 /* testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF5A2542872F3BA007F1424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CF5A2562872F3BA007F1424 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				3CF5A2562872F3BA007F1424 /* SceneDelegate.swift */,
 				3CF5A2582872F3BA007F1424 /* ViewController.swift */,
 				3CF5A25A2872F3BA007F1424 /* Main.storyboard */,
+				3CC405DA287610D9002C7BB2 /* SecondPageControllerViewController.swift */,
 				3CF5A25D2872F3BB007F1424 /* Assets.xcassets */,
 				3CF5A25F2872F3BB007F1424 /* LaunchScreen.storyboard */,
 				3CF5A2622872F3BB007F1424 /* Info.plist */,
@@ -261,6 +264,7 @@
 				3CF5A2592872F3BA007F1424 /* ViewController.swift in Sources */,
 				3CF5A2552872F3BA007F1424 /* AppDelegate.swift in Sources */,
 				3CF5A2572872F3BA007F1424 /* SceneDelegate.swift in Sources */,
+				3CC405DB287610D9002C7BB2 /* SecondPageControllerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
