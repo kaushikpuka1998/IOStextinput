@@ -48,7 +48,7 @@ class ViewController: UIViewController {
 
 extension String {
     func isvalidmail() -> Bool {
-        let inputrefex = "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[A-Za-zA-Za-z]"
+        let inputrefex = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
         let predic = NSPredicate(format: "SELF MATCHES %@", inputrefex)
         return predic.evaluate(with: self)
     }
